@@ -16,9 +16,7 @@
 
     <form id="orderForm">
         <fieldset>
-            <legend>
-                Personal Information
-            </legend>
+            <legend>Personal Information</legend>
             <label for="yourName">Your Name: </label>
             <input type="text" id="yourName" size="20" placeholder="Your Name Here">
             <br><br>
@@ -27,6 +25,71 @@
             <br><br>
             <label for="yourPhone">Your Phone Number: </label>
             <input type="tel" id="yourPhone" size="20" placeholder="555-555-5555">
+            <br><br>
+            <label for="pickupDate">Desired Pickup Date: </label>
+            <input type="date" id="pickupDate">
+        </fieldset>
+
+        <fieldset>
+            <legend>Design Your Cake</legend>
+            <p>Pick a Shape</p>
+            <input type="radio" name="shape" id="circle" value="circle">
+            <label for="circle">Circle &#9679;</label>
+            <br>
+            <input type="radio" name="shape" id="rectangle" value="rectangle">
+            <label for="rectangle">Rectangle &#9646;</label>
+            <br>
+            <input type="radio" name="shape" id="square" value="square">
+            <label for="square">Square &#9632;</label>
+            <br>
+            <input type="radio" name="shape" id="heart" value="heart">
+            <label for="heart">Heart &hearts;</label>
+            <br><br>
+            <label for="layers">How many layers?</label>
+            <select id="layers">
+                <option value="1">One Layer</option>
+                <option value="2">Two Layers</option>
+                <option value="3">Three Layers</option>
+            </select>
+            <br><br>
+            <label for="flavor">Pick a Flavor</label>
+            <input list="flavor">
+            <datalist id="flavor">
+                <option value="Black Forest Cake"></option>
+                <option value="Cheesecake"></option>
+                <option value="Chocolate Cake"></option>
+                <option value="Funfetti"></option>
+                <option value="Lemon Cake"></option>
+                <option value="Pound Cake"></option>
+                <option value="Red Velvet Cake"></option>
+                <option value="Strawberry Cake"></option>
+                <option value="Yellow/Vanilla Cake"></option>
+            </datalist>
+            <br><br>
+            <p>Pick Toppings</p>
+            <input type="checkbox" id="cherries" value="cherries">
+            <label for="cherries">Cherries</label>
+            <br>
+            <input type="checkbox" id="sprinkles" value="sprinkles">
+            <label for="sprinkles">Sprinkles</label>
+            <br>
+            <input type="checkbox" id="whippedCream" value="whippedCream">
+            <label for="whippedCream">Whipped Cream</label>
+            <br>
+            <input type="checkbox" id="nuts" value="nuts">
+            <label for="nuts">Nuts</label>
+            <br><br>
+            <label for="message">What message do you want on the cake?</label>
+            <textarea id="message" cols="35" rows="5" placeholder="Happy Birthday!"></textarea>
+            <br><br>
+            <label for="frostingColor">What color frosting?</label>
+            <input type="color" id="frostingColor" value="#ffffff">
+            <br><br>
+            <label for="candles">How many candles?</label>
+            <input type="number" id="candles" min="0" max="100" value="1">
+            <br><br>
+            <input type="reset" value="Clear Form"> &nbsp; &nbsp; &nbsp;
+            <input type="submit" value="Submit">
         </fieldset>
     </form>
 

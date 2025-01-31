@@ -42,6 +42,31 @@
             line-height: 24px;
             text-indent: 35px;
         }
+        /* custom class to remove indents */
+        
+        .no-indent {
+            text-indent: 0px;
+        }
+        /* css for hyperlinks */
+        
+        a:link {
+            color: maroon;
+        }
+        
+        a:visited {
+            color: maroon;
+        }
+        
+        a:hover {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        a:active {
+            color: green;
+            text-decoration: line-through;
+        }
     </style>
 </head>
 
@@ -50,7 +75,7 @@
     <a name="top"></a>
     <h1>The Platypus</h1>
 
-    <p>
+    <p class="no-indent">
         <a href="#sum">Summary</a> <br>
         <a href="#tax">Taxonomy</a> <br>
         <a href="#des">Description</a> <br>
@@ -109,10 +134,10 @@
         on land. Unlike a bird's beak (in which the upper and lower parts separate to reveal the mouth), the snout of the platypus is a sensory organ with the mouth on the underside. The nostrils are located on the dorsal surface of the snout, while the
         eyes and ears are located in a groove set just back from it; this groove is closed when swimming. Platypuses have been heard to emit a low growl when disturbed and a range of other vocalizations have been reported in captive specimens.
 
-        <p>Image and Text Credit: <a href="https://en.wikipedia.org/wiki/Platypus" target="_blank">Wikipedia</a></p>
+        <p class="no-indent">Image and Text Credit: <a href="https://en.wikipedia.org/wiki/Platypus" target="_blank">Wikipedia</a></p>
     </p>
 
-    <p>
+    <p class="no-indent">
         <a href="#top">Back to Top</a>
     </p>
 

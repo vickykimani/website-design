@@ -8,46 +8,84 @@
     <title>Vicky Kimani</title>
 </head>
 
-<body>
+<body bgcolor="#f768d8">
 
-    <h1>Assignment 3 - Forms</h1>
+    <h1>HydraFacials Away</h1>
+    <p>Welcome to Hydrafacials Away, your go-to destination for radiant and rejuvenated skin! We specialize in Hydrafacial treatments, but our expertise doesn’t stop there. From deep-cleansing facials to customized skincare solutions, our professional estheticians
+        are dedicated to helping you achieve a healthy, glowing complexion. Whether you're looking for hydration, anti-aging treatments, or acne care, we offer a range of services tailored to your skin’s unique needs. Book an appointment today and experience
+        the best in skincare luxury!</p>
 
     <form>
-        <label for="name">Name</label> <br>
-        <input type="text" id="name" name="name" required> <br>
 
-        <label for="number">Mobile Number</label> <br>
-        <input type="number" id="number" name="number" required> <br>
+        <fieldset>
+            <legend>Contact Details <span style="color: red;">*</legend>
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" size="40" name="name" placeholder="Name" style="height: 40px;" required>
+            <br>
+            <br>
+            <label for="number">Mobile Number</label> <br>
+            <input type="tel" id="number" size="30" name="number" placeholder="Mobile Number" style="height: 40px;" required>
+            <br>
+            <br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" size="30" name="email" placeholder="Email Address" style="height: 40px;" required>
+        </fieldset>
 
-        <label for="email">Email</label> <br>
-        <input type="email" id="email" name="email" required> <br>
+        <fieldset>
+            <legend>Appointment Details</legend>
+            <p>Pick an Appointment Day</p>
+            <input type="checkbox" name="day" id="monday" value="monday">
+            <label for="monday">Monday</label>
+            <br>
+            <br>
+            <input type="checkbox" name="day" id="tuesday" value="tuesday">
+            <label for="tuesday">Tuesday</label>
+            <br>
+            <br>
+            <input type="checkbox" name="day" id="wednesday" value="wednesday">
+            <label for="wednesday">Wednesday</label>
+            <br>
+            <br>
+            <input type="checkbox" name="day" id="thursday" value="thursday">
+            <label for="thursday">Thursday</label>
+            <br>
+            <br>
+            <label for="apdate">Appointment Date</label>
+            <input type="date" id="apdate">
+            <br>
+            <label for="facials">What facial service would you like?</label>
+            <select id="facials">
+                <option value="1">Dermaplanning</option>
+                <option value="2">Acne Facial</option>
+                <option value="3">Classic Facial</option>
+                <option value="4">Deep Cleansing Facial</option>
+                <option value="5">Light Therapy</option>
+                <option value="6">Chemical Peel</option>
+                <option value="7">Manual Lymphatic Drainage</option>
+                <option value="8">Acupuncture Facial</option>
+                <option value="9">Aging Skin</option>
+                <option value="10">Microneedling</option>
+            </select>
+            <label for="message">Any specific instructions?</label>
+            <textarea id="message" cols="35" rows="4" placeholder="type here"> </textarea> <br>
+        </fieldset>
 
-        <p>Pick Appointment Day</p>
-        <input type="checkbox" id="monday" value="monday">
-        <label for="monday">Monday</label>
+
+        <fieldset>
+            <legend>Set an appointment with us!</legend>
+            <p>Select an appointment time</p>
+            <input type="radio" name="service" id="morning" value="morning">
+            <label for="morning">Morning (8am to 11am)</label>
+            <br>
+            <input type="radio" name="service" id="noon" value="noon">
+            <label for="noon">Noon (12pm to 1pm)</label>
+            <br>
+            <input type="radio" name="service" id="afternoon" value="afternoon">
+            <label for="afternoon">Afternoon (2pm to 5pm)</label>
+        </fieldset>
+
         <br>
-        <input type="checkbox" id="tuesday" value="tuesday">
-        <label for="tuesday">Tuesday</label>
-        <br>
-        <input type="checkbox" id="wednesday" value="wednesday">
-        <label for="wednesday">Wednesday</label>
-        <br>
-        <input type="checkbox" id="thursday" value="thursday">
-        <label for="thursday">Thursday</label>
-        <br>
-        <input type="checkbox" id="friday" value="friday">
-        <label for="friday">Friday</label>
-        <br>
-        <input type="checkbox" id="saturday" value="saturday">
-        <label for="saturday">Saturday</label>
-        <br>
-        <input type="checkbox" id="sunday" value="sunday">
-        <label for="sunday">Sunday</label>
-        <br>
-        <label for="message">Send us a message!</label>
-        <textarea id="message" cols="35" rows="4" placeholder="type a message"> </textarea> <br>
-        <br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" style="height: 40px;">
     </form>
 
 </body>

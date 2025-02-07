@@ -12,7 +12,30 @@
             margin-top: 30px;
         }
         
-        div#container {}
+        div#container {
+            position: static;
+            box-sizing: border-box;
+            width: 500px;
+            height: 800px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: white;
+            /* center this box */
+            margin-left: auto;
+            margin-right: auto;
+            /* add borders to each side */
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 10px solid black;
+            border-left: 20px dashed black;
+            /* round some corners */
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            /* add a drop shadow */
+            box-shadow: 10px 10px 20px black;
+            /* rotate this box */
+            transform: rotate(-5deg);
+        }
         
         header {
             font-size: 60px;

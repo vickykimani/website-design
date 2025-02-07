@@ -5,10 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Box Sizing & Background Image Demo</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        
+        div#one {
+            position: static;
+            box-sizing: content-box;
+            color: white;
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div id="one">
+
+        Box One <br> content-box <br> total width is 400px <br> the 50 pixels of padding on each side adds to the total width of the box
+
+    </div>
 
 </body>
 

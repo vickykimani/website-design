@@ -16,6 +16,27 @@
         
         h1 {
             font-family: my_font_1;
+            font-size: 72px;
+            color: deeppink;
+            letter-spacing: 3px;
+            word-spacing: 10px;
+            margin: 0px;
+            text-shadow: 3px 3px 0px deepskyblue;
+        }
+        /* style with new font */
+        
+        @font-face {
+            font-family: my_font_2;
+            src: url(barbie.ttf);
+        }
+        
+        p {
+            font-family: my_font_2;
+            font-size: 60px;
+            color: deepskyblue;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            text-shadow: 3px 3px 0px black;
         }
     </style>
 </head>
@@ -23,6 +44,8 @@
 <body>
 
     <h1>Embedding Fonts with CSS</h1>
+
+    <p>my other embedded font...</p>
 
 </body>
 

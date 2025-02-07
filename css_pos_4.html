@@ -7,7 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advancec CSS Layout</title>
     <style>
-
+        body {
+            background-color: purple;
+            background-image: linear-gradient(lavender, purple);
+            background-repeat: no-repeat;
+        }
+        /* big box to hold smaller boxes */
+        
+        div#container {
+            position: static;
+            box-sizing: border-box;
+            background-color: yellow;
+            width: 600px;
+            height: 600px;
+            /* center this box */
+            margin-left: auto;
+            margin-right: auto;
+            /* add shadow */
+            box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+            /* rounded corner top right */
+            border-top-right-radius: 50px;
+        }
+        /* smaller boxes */
+        
+        header {
+            position: static;
+            box-sizing: border-box;
+            background-color: lavender;
+            width: 600px;
+            height: 100px;
+            padding-top: 20px;
+            background-image: url(cat.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -100px;
+            border-top-right-radius: 50px;
+        }
+        
+        nav {
+            position: static;
+            box-sizing: border-box;
+            background-color: pink;
+            width: 150px;
+            height: 450px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: left;
+        }
+        
+        article {}
+        
+        footer {}
     </style>
 </head>
 
@@ -23,6 +73,7 @@
             <a href="#">Link 3</a> <br>
         </nav>
         <article>
+            <h2>This is the main content area</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste magnam sed vitae molestias? Eaque a corrupti minima, porro harum eos, eveniet quae quas sint sit odit commodi ab quasi! In. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
                 non aperiam, ipsum consectetur natus dolorum perspiciatis! Non quos molestias asperiores ex tempora ea doloremque animi nobis repudiandae libero. Officiis, neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas

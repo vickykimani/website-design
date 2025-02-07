@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Float & Clear...and Gradient Backgrounds</title>
     <style>
+        body {
+            background-image: linear-gradient(lightblue, darkblue);
+            background-repeat: no-repeat;
+            background-color: darkblue;
+        }
         /* apply to all div boxes */
         
         div {
@@ -39,25 +44,37 @@
             background-color: purple;
             float: left;
         }
+        
+        div#container {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            padding: 50px;
+            /* how to center a box */
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="one">
-        This is box one
-    </div>
+    <div id="container">
+        <div id="one">
+            This is box one
+        </div>
 
-    <div id="two">
-        This is box two
-    </div>
+        <div id="two">
+            This is box two
+        </div>
 
-    <div id="three">
-        This is box three
-    </div>
+        <div id="three">
+            This is box three
+        </div>
 
-    <div id="four">
-        This is box four
+        <div id="four">
+            This is box four
+        </div>
     </div>
 
 </body>

@@ -90,7 +90,23 @@
             transform: rotate(15deg);
         }
         
-        div#purple {}
+        div#purple {
+            position: absolute;
+            background-color: purple;
+            height: 200px;
+            width: 200px;
+            bottom: 5px;
+            left: 5px;
+            /* make it a circle */
+            border-radius: 100%;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18px;
+            z-index: 90;
+            padding-top: 40px;
+            background-image: url(cat.jpg);
+            background-position: -100px -45px;
+        }
         
         div#navy {}
     </style>
@@ -110,6 +126,9 @@
         </div>
         <div id="orange">
             Absolute Orange Div
+        </div>
+        <div id="purple">
+            Absolute Purple Div
         </div>
     </div>
 

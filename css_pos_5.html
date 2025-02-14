@@ -108,7 +108,19 @@
             background-position: -100px -45px;
         }
         
-        div#navy {}
+        div#navy {
+            position: absolute;
+            background-color: rgba(0, 0, 128, 0.5);
+            height: 150px;
+            width: 200px;
+            top: 0px;
+            right: -20px;
+            z-index: 65;
+            box-shadow: 10px 10px 10px black;
+            border: 5px groove yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            transform: rotate(-15deg);
+        }
     </style>
 </head>
 
@@ -129,6 +141,9 @@
         </div>
         <div id="purple">
             Absolute Purple Div
+        </div>
+        <div id="navy">
+            Absolute Navy Div
         </div>
     </div>
 

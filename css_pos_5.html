@@ -9,6 +9,8 @@
     <style>
         body {
             background-color: black;
+            /* make browser remove top spacing */
+            /* margin: 0px; */
         }
         /* apply this to all div tags */
         
@@ -19,10 +21,97 @@
             padding: 10px;
             text-align: center;
         }
+        /* relative div to hold absolute divs */
+        
+        div#container {
+            position: relative;
+            background-color: bisque;
+            height: 650px;
+            width: 650px;
+            border: 10px solid white;
+            /* center on the page */
+            margin-left: auto;
+            margin-right: auto;
+            /* push away from top edge of the browser */
+            top: 100px;
+        }
+        /* absolute divs inside relative div */
+        
+        div#blue {
+            position: absolute;
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            color: white;
+            /* set the coordinates */
+            top: 0px;
+            left: 0px;
+            /* set the stacking order */
+            z-index: 11;
+        }
+        
+        div#red {
+            position: absolute;
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            top: 200px;
+            left: 200px;
+            color: white;
+            z-index: 25;
+            transform: rotate(10deg);
+        }
+        
+        div#green {
+            position: absolute;
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            top: 100px;
+            left: 100px;
+            color: white;
+            z-index: 12;
+            transform: rotate(5deg);
+        }
+        
+        div#orange {
+            position: absolute;
+            background-color: rgba(255, 165, 0, 0.75);
+            height: 300px;
+            width: 300px;
+            top: 300px;
+            left: 300px;
+            z-index: 75;
+            border: 3px dashed white;
+            border-bottom-right-radius: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.75);
+            transform: rotate(15deg);
+        }
+        
+        div#purple {}
+        
+        div#navy {}
     </style>
 </head>
 
 <body>
+
+    <div id="container">
+        <div id="blue">
+            Absolute Blue Div
+        </div>
+        <div id="red">
+            Absolute Red Div
+        </div>
+        <div id="green">
+            Absolute Green Div
+        </div>
+        <div id="orange">
+            Absolute Orange Div
+        </div>
+    </div>
 
 </body>
 

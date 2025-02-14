@@ -150,10 +150,78 @@
             font-size: 24px;
             font-family: juice itc regular, cursive;
         }
+        /* embed arcade classic.ttf font */
+        
+        @font-face {
+            font-family: my_font;
+            src: url(arcadeclassic.ttf);
+        }
+        
+        div#gray {
+            position: fixed;
+            background-color: gray;
+            height: 50px;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 500;
+            font-size: 42px;
+            font-family: my_font;
+            color: black;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            text-shadow: 2px 2px 0px white;
+        }
+        
+        div#brown {
+            position: fixed;
+            background-color: transparent;
+            height: 75px;
+            width: 100%;
+            bottom: 0px;
+            right: 0px;
+            z-index: 400;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+            text-shadow: 5px 5px 0px black;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            background-image: url(depaul_logo.png);
+            background-size: contain;
+        }
+        
+        div#cyan {
+            position: absolute;
+            background-color: cyan;
+            background-image: radial-gradient(cyan, darkblue);
+            height: 200px;
+            width: 200px;
+            bottom: 0px;
+            left: 0px;
+            z-index: 600;
+            border-top-right-radius: 100%;
+            border-top-left-radius: 100%;
+            padding: 30px;
+            color: black;
+            font-size: 30px;
+            font-family: rage, fantasy;
+        }
     </style>
 </head>
 
 <body>
+
+    <div id="cyan">
+        Absolute Cyan Div
+    </div>
+
+    <div id="brown">
+        Fixed Brown Div
+    </div>
+
+    <div id="gray">
+        Fixed Gray Div
+    </div>
 
     <div id="yellow">
         Absolute Yellow Div

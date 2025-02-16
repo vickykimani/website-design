@@ -10,6 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f8ff;
         }
         
         div#container {
@@ -73,11 +74,57 @@
             background-color: #3b82f6;
         }
         
-        aside#left {}
+        aside {
+            width: 20%;
+            float: left;
+            text-align: center;
+            padding: 10px;
+        }
         
-        article {}
+        aside img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            transition: transform 0.3s, ease-in-out;
+        }
         
-        aside#right {}
+        aside img:hover {
+            transform: scale(1.05);
+        }
+        
+        aside p {
+            font-style: italic;
+            color: #333;
+            margin-top: 10px;
+        }
+        
+        aside#left {
+            width: 20%;
+            float: left;
+        }
+        
+        article {
+            width: 45%;
+            float: left;
+            background-color: white;
+            padding: 20px;
+            margin: 0 2.5%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* clear floats after content */
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        aside#right {
+            width: 20%;
+            float: left;
+        }
         
         footer {}
         
@@ -102,9 +149,21 @@
                 <li><a href="#">Cozy Winter Movies</a></li>
             </ul>
         </nav>
-        <aside id="left"></aside>
-        <article></article>
-        <aside id="right"></aside>
+        <aside id="left">
+            <img src="assignment5_inspoimgs/winter_inspo2.jpeg" alt="winter scene">
+            <p>Embracing the cold with outdoor adventures.</p>
+        </aside>
+        <article>
+            <h2>Why Winter Activities Inspire Me</h2>
+            <p>Winter has always been my favorite season because of the beauty of snow-covered landscapes and the cozy feeling it brings. My inspiration comes from activities that blend adventure and comfort</p>
+            <p>Skiing and snowboarding offer thrilling experiences, while ice skating is a graceful and fun way to enjoy the season. On the cozy side, nothing beats a warm cup of hot coffee after a long day in the cold.</p>
+        </article>
+        <aside id="right">
+            <img src="assignment5_inspoimgs/1.jpg" alt="winter scene">
+            <p>Winter Adventures</p>
+        </aside>
+
+        <div class="clearfix"></div>
         <footer></footer>
     </div>
 

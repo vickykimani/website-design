@@ -13,6 +13,18 @@
             background-color: #f0f8ff;
         }
         
+        h1 {
+            color: #1e3a5f;
+            font-weight: bold;
+            text-shadow: 5px 5px 0px rgb(12, 10, 53);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+        
         div#container {
             position: static;
             width: 100%;
@@ -83,7 +95,9 @@
         
         aside img {
             width: 100%;
-            border-radius: 8px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
             margin-bottom: 10px;
             transition: transform 0.3s, ease-in-out;
@@ -104,9 +118,21 @@
             float: left;
         }
         
+        aside#right {
+            width: 20%;
+            float: left;
+        }
+        
+        .aside-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
         article {
             width: 45%;
             float: left;
+            text-align: justify;
             background-color: white;
             padding: 20px;
             margin: 0 2.5%;
@@ -121,12 +147,30 @@
             clear: both;
         }
         
-        aside#right {
-            width: 20%;
-            float: left;
+        footer {
+            position: static;
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 1rem;
         }
         
-        footer {}
+        footer a {
+            color: #b3e5fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            margin: 10px 0;
+        }
         
         h1 {}
         
@@ -144,27 +188,42 @@
             <ul>
                 <li><a href="#">Skiing</a></li>
                 <li><a href="#">Snowboarding</a></li>
-                <li><a href="#">Ice Skating</a></li>
+                <li><a href="#">Hiking</a></li>
                 <li><a href="#">Hot Coffee</a></li>
                 <li><a href="#">Cozy Winter Movies</a></li>
             </ul>
         </nav>
         <aside id="left">
-            <img src="assignment5_inspoimgs/winter_inspo2.jpeg" alt="winter scene">
+            <div class="aside-gallery">
+                <img src="assignment5_inspoimgs/winter_inspo2.jpeg" alt="winter scene">
+                <img src="assignment5_inspoimgs/2.jpg" alt="winter scene">
+            </div>
             <p>Embracing the cold with outdoor adventures.</p>
         </aside>
         <article>
-            <h2>Why Winter Activities Inspire Me</h2>
-            <p>Winter has always been my favorite season because of the beauty of snow-covered landscapes and the cozy feeling it brings. My inspiration comes from activities that blend adventure and comfort</p>
+            <h2>❄️ Why Winter Activities Inspire Me ❄️</h2>
+            <p>Winter has always been my favorite season because of the beauty of snow-covered landscapes and the cozy feeling it brings. My inspiration comes from activities that blend adventure and comfort.</p>
             <p>Skiing and snowboarding offer thrilling experiences, while ice skating is a graceful and fun way to enjoy the season. On the cozy side, nothing beats a warm cup of hot coffee after a long day in the cold.</p>
         </article>
         <aside id="right">
-            <img src="assignment5_inspoimgs/1.jpg" alt="winter scene">
+            <div class="aside-gallery">
+                <img src="assignment5_inspoimgs/1.jpg" alt="winter scene">
+                <img src="assignment5_inspoimgs/3.jpg" alt="winter scene">
+            </div>
             <p>Winter Adventures</p>
         </aside>
 
         <div class="clearfix"></div>
-        <footer></footer>
+        <footer>
+            <p>Follow me for more winter inspiration:</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>All Images retrieved from <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>. You can also create your own vision board for your favourite winter activities!</p>
+            <p>&copy; 2025 <a href="https://github.com/vickykimani">Vicky Kimani</a></p>
+        </footer>
     </div>
 
 </body>

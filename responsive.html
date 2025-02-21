@@ -144,10 +144,67 @@
         }
         /* large - 661 to 999px */
         
-        @media(min-width: 661px) {}
+        @media(min-width: 661px) {
+            body {
+                background-color: blue;
+            }
+            .large {
+                display: block;
+            }
+            .small,
+            .medium,
+            .xl {
+                display: none;
+            }
+            img.responsive {
+                width: 50%;
+                float: left;
+                padding-right: 20px;
+            }
+            div#main {
+                background-color: #fff2e0;
+                width: 80%;
+                border-left: 1px solid black;
+                border-right: 8px solid black;
+                border-top: 1px solid black;
+                border-bottom: 8px solid black;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            header {
+                border-bottom: none;
+            }
+            footer {
+                border-top: none;
+                background-color: tan;
+            }
+        }
         /* extra large - 1000px and up */
         
-        @media(min-width: 1000px) {}
+        @media(min-width: 1000px) {
+            body {
+                background-color: navy;
+                background-image: url(depaul_logo.png);
+            }
+            .xl {
+                display: block;
+            }
+            .small,
+            .medium,
+            .large {
+                display: none;
+            }
+            img.responsive {
+                max-width: 500px;
+                float: right;
+                padding-left: 20px;
+                padding-right: 0px;
+            }
+            div#main {
+                width: 960px;
+                box-shadow: 10px 10px 20px black;
+            }
+        }
     </style>
 </head>
 

@@ -1,0 +1,44 @@
+INSTRUCTIONS
+Use this code so that the height and width of your web browser are displayed when you resize your web page. 
+
+
+1. Put this JavaScript before the closing </head> tag on your page 
+
+<script>
+function showBrowserSize() {
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	document.getElementById("sizeInfo").innerHTML = "Width: " + w + "<br>Height: " + h;
+}
+</script>
+
+
+2. Put this JavaScript INSIDE of you body tag...
+
+onresize="showBrowserSize();" onload="showBrowserSize();"
+
+...so that it looks like this:
+
+<body onresize="showBrowserSize();" onload="showBrowserSize();">
+
+
+
+3. Put this HTML somewhere before the closing </body> tag
+
+<div id="sizeInfo"></div>
+
+
+4. Put this CSS somehwere before your closing </style> tag if you are using embedded CSS. 
+Or, if you are using an external CSS style sheet, place this somewhere in your .css file. 
+
+            div#sizeInfo {position: fixed;
+                        box-sizing: border-box;
+                        background-color: yellow;
+                        width: 100px;
+                        height: 50px;
+                        bottom: 0px;
+                        right: 0px;
+                        z-index: 999;
+                        display: block; /* change to none later */}
+
+

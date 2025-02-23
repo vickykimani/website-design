@@ -31,9 +31,64 @@
             margin-top: 10px;
         }
         
+        div#why-plants-are-good {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        div#why-plants-are-good h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #8ccf87;
+            margin-bottom: 20px;
+        }
+        
+        div#why-plants-are-good p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        div#why-plants-are-good ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        div#why-plants-are-good ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        div#why-plants-are-good ul li strong {
+            color: #8ccf87;
+        }
+        
+        div#more-plants {
+            padding: 20px;
+            height: 650px;
+            width: 75%;
+            background-color: #ffffff;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        div#more-plants h2 {
+            font-size: 2.2em;
+            color: #8ccf87;
+            margin-bottom: 30px;
+        }
+        
         div#container {
             position: relative;
-            width: 80%;
+            width: 75%;
             height: 400px;
             margin: 20px auto;
             border: 1px solid #ddd;
@@ -88,11 +143,24 @@
             padding: 10px 0;
         }
         
-        .plant-image {
+        .plant-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
             width: 100%;
-            height: 150px;
+            height: 250px;
             object-fit: cover;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .plant-image {
+            width: 30%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -120,31 +188,31 @@
     <!-- relative positioned container div -->
     <div id="container">
         <div id="one" class="plant-box">
-            <img src="assignment6_inspoimgs/1.jpeg" alt="plant1" class="plant-image">
+            <img src="assignment6_inspoimgs/1.jpeg" alt="plant1" class="plant-images">
             <p><strong>Plant Name</strong></p>
             <p>Low maintenance and air-purifying plant</p>
         </div>
 
         <div id="two" class="plant-box">
-            <img src="assignment6_inspoimgs/2.jpeg" alt="plant2" class="plant-image">
+            <img src="assignment6_inspoimgs/2.jpeg" alt="plant2" class="plant-images">
             <p><strong>Plant Name</strong></p>
             <p>Low maintenance and air-purifying plant</p>
         </div>
 
         <div id="three" class="plant-box">
-            <img src="assignment6_inspoimgs/3.jpeg" alt="plant3" class="plant-image">
+            <img src="assignment6_inspoimgs/3.jpeg" alt="plant3" class="plant-images">
             <p><strong>Plant Name</strong></p>
             <p>Low maintenance and air-purifying plant</p>
         </div>
 
         <div id="four" class="plant-box">
-            <img src="assignment6_inspoimgs/4.jpeg" alt="plant4" class="plant-image">
+            <img src="assignment6_inspoimgs/4.jpeg" alt="plant4" class="plant-images">
             <p><strong>Plant Name</strong></p>
             <p>Low maintenance and air-purifying plant</p>
         </div>
 
         <div id="five" class="plant-box">
-            <img src="assignment6_inspoimgs/5.jpeg" alt="plant5" class="plant-image">
+            <img src="assignment6_inspoimgs/5.jpeg" alt="plant5" class="plant-images">
             <p><strong>Plant Name</strong></p>
             <p>Low maintenance and air-purifying plant</p>
         </div>

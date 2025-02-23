@@ -12,6 +12,12 @@
             margin: 0;
             padding: 0;
             background-color: #f2f9f2;
+            padding-bottom: 60px;
+        }
+        
+        @font-face {
+            font-family: my_font_2;
+            src: url(barbie.ttf);
         }
         
         header {
@@ -24,11 +30,14 @@
         header h1 {
             margin: 0;
             font-size: 3em;
+            font-family: my_font_2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         header p {
             font-size: 1.2em;
             margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
         
         div#why-plants-are-good {
@@ -42,6 +51,7 @@
         
         div#why-plants-are-good h2 {
             text-align: center;
+            font-family: my_font_2;
             font-size: 2em;
             color: #8ccf87;
             margin-bottom: 20px;
@@ -81,6 +91,7 @@
         }
         
         div#more-plants h2 {
+            font-family: my_font_2;
             font-size: 2.2em;
             color: #8ccf87;
             margin-bottom: 30px;
@@ -105,6 +116,10 @@
             width: 200px;
             text-align: center;
             box-sizing: border-box;
+        }
+        
+        .plant-box strong {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         
         div#one {
@@ -162,6 +177,16 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 0.9em;
+            background-color: #8ccf87;
+            color: white;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -189,48 +214,53 @@
     <div id="container">
         <div id="one" class="plant-box">
             <img src="assignment6_inspoimgs/1.jpeg" alt="plant1" class="plant-images">
-            <p><strong>Plant Name</strong></p>
-            <p>Low maintenance and air-purifying plant</p>
+            <p><strong>Monstera</strong></p>
+            <p>A tropical plant with large, glossy leaves that thrives in moderate light.</p>
         </div>
 
         <div id="two" class="plant-box">
             <img src="assignment6_inspoimgs/2.jpeg" alt="plant2" class="plant-images">
-            <p><strong>Plant Name</strong></p>
-            <p>Low maintenance and air-purifying plant</p>
+            <p><strong>Snake Plant</strong></p>
+            <p>A hardy, low-maintenance plant that thrives in low light and purifies the air.</p>
         </div>
 
         <div id="three" class="plant-box">
             <img src="assignment6_inspoimgs/3.jpeg" alt="plant3" class="plant-images">
-            <p><strong>Plant Name</strong></p>
-            <p>Low maintenance and air-purifying plant</p>
+            <p><strong>Fiddle Leaf Fig</strong></p>
+            <p>A striking plant with large leaves that adds a bold statement to any room.</p>
         </div>
 
         <div id="four" class="plant-box">
             <img src="assignment6_inspoimgs/4.jpeg" alt="plant4" class="plant-images">
-            <p><strong>Plant Name</strong></p>
-            <p>Low maintenance and air-purifying plant</p>
+            <p><strong>Pothos</strong></p>
+            <p>A fast-growing vine with heart-shaped leaves, ideal for low-light spaces.</p>
         </div>
 
         <div id="five" class="plant-box">
             <img src="assignment6_inspoimgs/5.jpeg" alt="plant5" class="plant-images">
-            <p><strong>Plant Name</strong></p>
-            <p>Low maintenance and air-purifying plant</p>
+            <p><strong>ZZ Plant</strong></p>
+            <p>A drought-tolerant, glossy-leafed plant that thrives in low light and requires little care.</p>
         </div>
     </div>
 
     <div id="more-plants">
         <h2>More Awesome Plants</h2>
         <div class="plant-images">
-            <img src="path/to/plant6.jpeg" alt="Plant 6" class="plant-image">
-            <img src="path/to/plant7.jpeg" alt="Plant 7" class="plant-image">
-            <img src="path/to/plant8.jpeg" alt="Plant 8" class="plant-image">
-            <img src="path/to/plant9.jpeg" alt="Plant 9" class="plant-image">
+            <img src="assignment6_inspoimgs/6.jpeg" alt="Plant 6" class="plant-image">
+            <img src="assignment6_inspoimgs/7.jpeg" alt="Plant 7" class="plant-image">
+            <img src="assignment6_inspoimgs/8.jpeg" alt="Plant 8" class="plant-image">
+            <img src="assignment6_inspoimgs/9.jpeg" alt="Plant 9" class="plant-image">
+            <img src="assignment6_inspoimgs/10.jpeg" alt="Plant 9" class="plant-image">
         </div>
     </div>
 
     <div id="six">
         <p>Need Plant Care Tips? <a href="#">Click here!</a></p>
     </div>
+
+    <footer>
+        <p><small><em>Disclaimer: The plants mentioned on this page do not match the images attached. For illustrative purposes only.</em></small></p>
+    </footer>
 
 
 </body>

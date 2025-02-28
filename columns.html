@@ -35,12 +35,17 @@
         /* breakpoints - replace "num" with a digit 1-12 */
         /* col-xs-num = width is less than 576px */
         /* CSS for under 576px - extra small - default values */
+        /* between 576-767 - small */
         
         .container {
             background-color: lightgray;
             min-height: 100px;
         }
-        /* between 576-767 - small */
+        
+        .container>div>* {
+            border: 1px solid black;
+        }
+        /* apply a border to the grandchildren of container */
         
         @media (min-width: 576px) {}
         /* between 768-991 - medium  */
@@ -108,6 +113,42 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
                 12
+            </div>
+        </div>
+        <!-- 3rd row -->
+        <div class="row" style="background-color: lavender;">
+            <div class="col-xs-12 col-sm-4 col-md-12 col-lg-12">
+                One
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-12">
+                Two
+            </div class="col-xs-12 col-sm-4 col-md-6 col-lg-12">
+            <div>
+                Three
+            </div>
+        </div>
+        <!-- 4th row -->
+        <div class="row" style="background-color: pink;">
+            <div class="col-xs-12">
+                One and only one div in this row.
+            </div>
+        </div>
+        <!-- 5th row -->
+        <div class="row" style="background-color: beige;">
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-12 col-xl-12 col-xxl-2">
+                I
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-12 col-xl-6 col-xxl-2">
+                II
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-gl-12 col-xl-6 col-xxl-4">
+                III
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-12 col-xl-12 col-xxl-2">
+                IV
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-12 col-xl-12 col-xxl-2">
+                V
             </div>
         </div>
 

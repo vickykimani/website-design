@@ -31,22 +31,124 @@
             display: block;
             /* change to none later */
         }
+        
+        body {
+            background-color: white;
+        }
+        
+        .container {
+            background-color: white;
+        }
+        
+        .row {
+            background-color: transparent;
+        }
+        
+        .container>div>* {
+            /* border: 1px solid gray; */
+            padding-top: 10px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        h2 {
+            margin: 10px;
+        }
+        
+        p {
+            font-size: 125%;
+        }
+        /* apply a temporary border to the grandchildren of container */
         /* CSS for under 576px - extra small - default values */
+        
+        @media (min-width: 576px) {
+            h2 {
+                padding-bottom: 5px;
+                border-bottom: 1px solid black;
+            }
+        }
         /* between 576-767 - small */
         
-        @media (min-width: 576px) {}
+        @media (min-width: 768px) {
+            body {
+                background-color: maroon;
+            }
+            h2::after {
+                content: "\25ba";
+            }
+            /* put an arrow after the h2 text */
+            h2 {
+                text-align: right;
+                background-color: black;
+                color: white;
+                padding-right: 10px;
+            }
+        }
         /* between 768-991 - medium  */
         
-        @media (min-width: 768px) {}
+        @media (min-width: 992px) {
+            .container {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding: 20px;
+                border: 2px solid black;
+                border-radius: 25px;
+            }
+            h2 {
+                color: initial;
+                padding: initial;
+                background-color: initial;
+                text-align: initial;
+                border-bottom: initial;
+            }
+            h2::after {
+                content: none;
+            }
+            .row>div:nth-child(3)>p:nth-child(1)::first-letter {
+                float: left;
+                font-size: 450%;
+                line-height: 1;
+                font-weight: bold;
+                margin-top: -5px;
+                margin-left: 5px;
+                margin-right: 10px;
+                margin-bottom: 5px;
+                color: black;
+                vertical-align: top;
+            }
+        }
         /* between 992-1199 - large  */
         
-        @media (min-width: 992px) {}
+        @media (min-width: 1200px) {
+            h2::before {
+                content: "\25ba";
+            }
+            h2::after {
+                content: "\25ba";
+            }
+        }
         /* between 1200-1399 - extra-large */
         
-        @media (min-width: 1200px) {}
+        @media (min-width: 1400px) {
+            .container {
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            }
+            h2 {
+                background-color: black;
+                color: white;
+                padding: 10px 10px 20px 20px;
+            }
+            h2::before {
+                content: none;
+            }
+            h2::after {
+                content: none;
+            }
+        }
         /* 1400 and up - extra-extra-large */
-        
-        @media (min-width: 1400px) {}
     </style>
 </head>
 

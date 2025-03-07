@@ -9,7 +9,7 @@ div#sizeInfo {
     bottom: 0px;
     right: 0px;
     z-index: 999;
-    display: block;
+    display: none;
     /* change block to none when you no longer want the post-it note */
 }
 

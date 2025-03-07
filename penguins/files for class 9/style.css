@@ -134,6 +134,60 @@ article {
     padding-bottom: 20px;
 }
 
+aside {
+    position: static;
+    box-sizing: border-box;
+    background-color: lightblue;
+    display: none;
+}
+
+h1 {
+    font-family: comic sans ms;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p,
+blockquote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+img.responsive {
+    width: 50%;
+    height: auto;
+    float: right;
+    padding-left: 20px;
+}
+
+footer {
+    position: static;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+    border-top: 1px dashed dodgerblue;
+}
+
+small {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+nav {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    background-color: transparent;
+}
+
 
 /* small - default - less than 501px - no media query */
 

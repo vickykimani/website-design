@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Template
+    </title>
+
+    <!-- external JavaScript file for menu and post-it note -->
+    <script src="menu.js"></script>
+
+    <!-- 1st external stylesheet for dropdown menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 2nd external stylesheet with my own styles -->
+
+
+    <!-- embedded styles to override above styles go here -->
+    <style>
+
+    </style>
+
+</head>
+
+<body onresize="showBrowserSize();" onload="showBrowserSize();">
+
+    <div id="main">
+
+        <header> </header>
+
+        <nav>
+            <div id="myTopnav" class="topnav">
+                <a href="#">Link 1</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <article> </article>
+
+        <aside> </aside>
+
+        <footer> </footer>
+
+    </div>
+    <!-- end of main -->
+
+    <div id="sizeInfo"></div>
+</body>
+
+</html>

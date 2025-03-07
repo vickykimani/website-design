@@ -188,8 +188,6 @@ nav {
     background-color: transparent;
 }
 
-a {}
-
 a:link {
     color: maroon;
 }
@@ -214,14 +212,59 @@ a:active {
 
 /* medium - 501 to 660px */
 
-@media (min-width: 501px) {}
+@media (min-width: 501px) {
+    header {
+        height: 100px;
+    }
+}
 
 
 /* large - 661 to 999px */
 
-@media (min-width: 661px) {}
+@media (min-width: 661px) {
+    div#main {
+        width: 90%;
+    }
+    header {
+        height: 150px;
+    }
+    img.responsive {
+        width: auto;
+    }
+}
 
 
 /* extra large - 1000px and up */
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    body {
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    div#main {
+        width: 950px;
+    }
+    article {
+        width: 750px;
+        float: left;
+        min-height: 400px;
+    }
+    aside {
+        display: block;
+        width: 200px;
+        height: auto;
+        float: right;
+        background-color: transparent;
+    }
+    footer {
+        clear: both;
+    }
+    img.responsive {
+        float: left;
+        margin-left: 0px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+}

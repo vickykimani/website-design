@@ -188,6 +188,26 @@ nav {
     background-color: transparent;
 }
 
+a {}
+
+a:link {
+    color: maroon;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: deeppink;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+    font-style: italic;
+}
+
 
 /* small - default - less than 501px - no media query */
 

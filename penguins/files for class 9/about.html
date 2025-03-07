@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        About Penguins
+    </title>
+
+    <!-- external JavaScript file for menu and post-it note -->
+    <script src="menu.js"></script>
+
+    <!-- 1st external stylesheet for dropdown menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- 2nd external stylesheet with my own styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- embedded styles to override above styles go here -->
+    <style>
+
+    </style>
+
+</head>
+
+<body onresize="showBrowserSize();" onload="showBrowserSize();">
+
+    <div id="main">
+
+        <header> </header>
+
+        <nav>
+            <div id="myTopnav" class="topnav">
+                <a href="home.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="buy.html">Where to Buy?</a>
+                <a href="contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+
+        <article>
+            <h1>
+                About Penguins
+            </h1>
+            <p>
+                <img src="penguin_chart_large.gif" alt="penguin chart">
+            </p>
+        </article>
+
+        <aside>
+            <img src="right_graphic.jpg" alt="a penguin">
+        </aside>
+
+        <footer>
+            <small>
+                &copy; 2025 - Vicky Kimani - All Rights Reserved don't steal my penguins.
+            </small>
+        </footer>
+
+    </div>
+    <!-- end of main -->
+
+    <div id="sizeInfo"></div>
+</body>
+
+</html>

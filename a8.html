@@ -16,6 +16,19 @@
         }
     </script>
     <style>
+        .sizeInfo {
+            position: fixed;
+            box-sizing: border-box;
+            background-color: yellow;
+            width: 100px;
+            height: 50px;
+            bottom: 0px;
+            right: 0px;
+            z-index: 999;
+            display: block;
+            /* change to none later */
+        }
+        
         body {
             background-color: wheat;
             color: black;
@@ -53,6 +66,67 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
         }
+        /* media queries for different screen sizes */
+        
+        @media (max-width: 575px) {
+            .title {
+                font-size: 1.8rem;
+            }
+            .author {
+                font-size: 1rem;
+            }
+            .poem-container {
+                max-width: 95%;
+            }
+        }
+        /* xs */
+        
+        @media (min-width: 576px) and (max-width: 767px) {
+            .title {
+                font-size: 2rem;
+            }
+            .author {
+                font-size: 1.2rem;
+            }
+            .poem-container {
+                max-width: 90%;
+            }
+        }
+        /* sm */
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .title {
+                font-size: 2.2rem;
+            }
+            .author {
+                font-size: 1.3rem;
+            }
+        }
+        /* md */
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            .author {
+                font-size: 1.5rem;
+            }
+        }
+        /* lg */
+        
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .poem-container {
+                max-width: 70%;
+            }
+        }
+        /* xl */
+        
+        @media (min-width: 1400px) {
+            .poem-container {
+                max-width: 60%;
+            }
+        }
+        /* xxl */
     </style>
 </head>
 
@@ -315,6 +389,14 @@
         </div>
     </div>
 
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>Images sourced from <a href="https://unsplash.com/">Unsplash</a></p>
+            <p>&copy; 2025 The Raven by Edgar Allan Poe | Designed by <a href="https://github.com/vickykimani">Vicky</a></p>
+        </div>
+    </footer>
+
+    <div id="sizeInfo"></div>
 
 </body>
 

@@ -208,6 +208,7 @@ footer {
 .footer-content h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .footer-content ul,
@@ -220,15 +221,29 @@ footer {
 .footer-social a {
     color: #fff;
     text-decoration: none;
-    display: block;
+    display: flex;
+    gap: 12px;
     margin: 5px 0;
     font-size: 1rem;
     transition: color 0.3s ease;
+    text-align: left;
+}
+
+.footer-social a {
+    gap: 12px;
+}
+
+.footer-social i {
+    font-size: 1.2rem;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
     color: #ff4500;
+}
+
+.footer-about {
+    text-align: left;
 }
 
 .footer-disclaimer {

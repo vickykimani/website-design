@@ -1,5 +1,5 @@
 body {
-    font-family: 'futura';
+    font-family: 'futura', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +11,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 nav {
@@ -25,10 +26,11 @@ nav .container {
 }
 
 .logo {
-    color: #333;
-    font-size: 1.5rem;
+    color: #ff4500;
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .nav-links {
@@ -55,31 +57,37 @@ nav .container {
 }
 
 .hero {
-    background: url(images/hero.jpg);
-    background-size: cover;
-    background-position: center;
+    background: url(images/hero.jpg) no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
+    position: relative;
+    min-height: 60vh;
+    overflow: hidden;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {
     background-color: #ff4500;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 25px;
     text-decoration: none;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
@@ -88,29 +96,26 @@ nav .container {
     background-color: #e63900;
 }
 
-.video-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.video-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .about {
-    padding: 50px 20px;
+    padding: 60px 20px;
     background-color: #fff;
     text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -118,5 +123,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
 }

@@ -99,7 +99,7 @@ nav .container {
 .about {
     padding: 60px 20px;
     background-color: #fff;
-    text-align: center;
+    text-align: justify;
 }
 
 .about h2 {
@@ -107,6 +107,8 @@ nav .container {
     margin-bottom: 20px;
     color: #333;
     font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .about p {
@@ -122,6 +124,11 @@ nav .container {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.about img:hover {
+    transform: scale(1.03);
 }
 
 .artists {
@@ -183,6 +190,70 @@ nav .container {
 .artist-info p {
     font-size: 0.8rem;
     margin-top: 5px;
+}
+
+.style .container {
+    padding: 0;
+}
+
+.style-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.style-content-left {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+.style-image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.style-image-right {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.style-text {
+    /* display: block;
+    overflow: hidden; */
+    flex: wrap;
+    min-width: 50%;
+}
+
+.style-text-left {
+    /* display: block;
+    overflow: hidden; */
+    flex: wrap;
+    min-width: 50%;
+}
+
+.style::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.impact::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer {
@@ -252,7 +323,7 @@ footer {
 }
 
 .footer-disclaimer a {
-    color: #fff;
+    color: #ff4500;
     text-decoration: none;
 }
 

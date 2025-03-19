@@ -620,3 +620,80 @@ footer {
     line-height: 1.8;
     margin-bottom: 25px;
 }
+
+
+/* key moments section */
+
+.history-page .style {
+    background-color: #fff;
+}
+
+.history-page .style h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.history-page .style .h3 {
+    color: #ff4500;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.history-page .style-content {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.history-page .style-image {
+    transform: transform 0.3s ease;
+}
+
+.history-page .style-image:hover {
+    transform: scale(1.02);
+}
+
+.history-page .impact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.history-page .impact h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.history-page .impact h3 {
+    color: #ff4500;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff4500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.history-page .style-content-left {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.history-page .style-image-right {
+    transition: transform 0.3s ease;
+}
+
+.history-page .style-image-right:hover {
+    transform: scale(1.02);
+}

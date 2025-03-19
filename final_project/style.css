@@ -697,3 +697,50 @@ footer {
 .history-page .style-image-right:hover {
     transform: scale(1.02);
 }
+
+
+/* responsive adjustments for history page */
+
+@media screen and (max-width: 991px) {
+    .history-page .hero h1 {
+        font-size: 2.8rem;
+    }
+    .history-page .about h2,
+    .history-page .style h2,
+    .history-page .impact h2 {
+        font-size: 2.2rem;
+    }
+    .history-page .about h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .history-page .hero h1 {
+        font-size: 2.2rem;
+    }
+    .history-page .about {
+        padding: 50px 15px;
+    }
+    .history-page .style-content,
+    .history-page .style-content-left {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .history-page .hero h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    .history-page .about h2,
+    .history-page .style h2,
+    .history-page .impact h2 {
+        font-size: 1.8rem;
+    }
+    .history-page .about h3,
+    .history-page .style h3,
+    .history-page .impact h3 {
+        font-size: 1.3rem;
+    }
+}

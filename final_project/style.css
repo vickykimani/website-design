@@ -56,6 +56,18 @@ nav .container {
     color: #ff4500;
 }
 
+
+/* mobile navigation toggle */
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 .hero {
     background: url(images/hero.jpg) no-repeat center center/cover;
     color: #fff;
@@ -338,4 +350,174 @@ footer {
 
 .footer-credit a:hover {
     color: #e63900;
+}
+
+
+/* responsive media queries */
+
+
+/* extra large screens (1200px and above) */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/* large screens (992px to 1199px) */
+
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* medium screens (768px to 991px) */
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .hero {
+        padding: 100px 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+    .about h2,
+    .artists h2 {
+        font-size: 2rem;
+    }
+    .about p {
+        font-size: 1.1rem;
+    }
+    .style-image,
+    .style-image-right {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .style-text,
+    .style-text-left {
+        min-width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-content>div {
+        padding: 0;
+    }
+}
+
+
+/* small screens (576px to 767px) */
+
+@media screen and (max-width: 767px) {
+    nav .container {
+        padding: 0 10px;
+    }
+    .logo {
+        margin-left: -5px;
+    }
+    .container {
+        max-width: 540px;
+        width: 95%;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: -5px;
+    }
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        height: calc(100vh - 60px);
+        width: 100%;
+        max-width: 300px;
+        background-color: #000;
+        flex-direction: column;
+        padding: 20px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+    }
+    .hero {
+        padding: 80px 20px;
+        min-height: 50vh;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .artist-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .artist-info {
+        opacity: 1;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        background: #000;
+    }
+}
+
+
+/* extra small screens (up to 575px) */
+
+@media screen and (max-width: 575px) {
+    nav .container {
+        padding: 0 5px;
+    }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .logo {
+        font-size: 1.5rem;
+        margin-left: -8px;
+    }
+    .nav-toggle {
+        margin-right: -8px;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .about,
+    .artists {
+        padding: 40px 15px;
+    }
+    .about h2,
+    .artists h2 {
+        font-size: 1.8rem;
+    }
+    .about p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 }

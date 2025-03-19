@@ -79,9 +79,10 @@ nav .container {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -530,4 +531,92 @@ footer {
         font-size: 1rem;
         line-height: 1.6;
     }
+}
+
+
+/* history page specific styles */
+
+.history-page {
+    color: #222;
+}
+
+.history-page .hero {
+    background: url(images/hero-history.jpg) no-repeat center center/cover;
+    min-height: 50vh;
+    position: relative;
+}
+
+.history-page .hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.history-page .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.history-page .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* timeline */
+
+.history-page .about {
+    background-color: #f8f4e8;
+    padding: 70px 20px;
+}
+
+.history-page .about h2 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.history-page .about h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff4500;
+}
+
+.history-page .about h3 {
+    color: #333;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.history-page .about h3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #ff4500;
+    border-radius: 50%;
+}
+
+.history-page .about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }

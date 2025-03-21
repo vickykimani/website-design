@@ -45,6 +45,12 @@ nav .container {
     display: inline;
 }
 
+.nav-links a.active {
+    color: #ff4500;
+    font-weight: bold;
+    border-bottom: 2px solid #ff4500;
+}
+
 .nav-links a {
     color: #fff;
     text-decoration: none;

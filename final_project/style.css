@@ -1091,7 +1091,7 @@ footer {
 }
 
 .guide-page .hero {
-    background: url() no-repeat center center/cover;
+    background: url(images/hero-guide.jpg) no-repeat center center/cover;
     min-height: 50vh;
     position: relative;
 }

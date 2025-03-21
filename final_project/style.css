@@ -1118,3 +1118,56 @@ footer {
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
+/* track list styling */
+
+.track-list {
+    margin-top: 30px;
+}
+
+.track-item {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #ff4500;
+    transition: transform 0.3s ease;
+}
+
+.track-item:hover {
+    transform: translateX(5px);
+}
+
+.track-item h3 {
+    color: #ff4500;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.track-item p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.track-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.track-features span {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.track-features i {
+    color: #ff4500;
+}

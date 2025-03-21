@@ -886,3 +886,132 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+
+/* rising stars */
+
+.rising-stars {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.rising-stars h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.rising-stars h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff4500;
+}
+
+.rising-stars p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.rising-stars .artist-grid {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    gap: 20px;
+}
+
+
+/* producers */
+
+.producers {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.producers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.producers h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #ff4500;
+}
+
+.producers p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.producer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.producer-item {
+    display: flex;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.producer-name {
+    flex: 1;
+    min-width: 220px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.producer-name h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+}
+
+.producer-name span {
+    font-size: 0.9rem;
+    color: #ff4500;
+}
+
+.producer-name span {
+    font-size: 0.9rem;
+    color: #ff4500;
+}
+
+.producer-description {
+    flex: 3;
+    padding: 20px;
+}
+
+.producer-description p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+}

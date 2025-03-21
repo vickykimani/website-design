@@ -862,3 +862,27 @@ footer {
     line-height: 1.8;
     margin-bottom: 20px;
 }
+
+.artist-notable {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    /* border-radius: 5px; */
+}
+
+.artist-notable h5 {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.artist-notable ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.artist-notable li {
+    font-size: 1rem;
+    line-height: 1.6;
+}

@@ -923,8 +923,14 @@ footer {
 
 .rising-stars .artist-grid {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+}
+
+.rising-stars .artist-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
 

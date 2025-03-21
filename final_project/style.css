@@ -744,3 +744,28 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+
+/* artists page css starts here */
+
+.artists-page .hero {
+    background: url(images/hero-artists.jpg) no-repeat center center/cover;
+    min-height: 50vh;
+    position: relative;
+}
+
+.artists-page .hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.artists-page .hero-content {
+    position: relative;
+    z-index: 2;
+}

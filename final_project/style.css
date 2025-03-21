@@ -1015,3 +1015,64 @@ footer {
     line-height: 1.6;
     text-align: left;
 }
+
+
+/* responsive adjustments for artists page */
+
+@media screen and (max-width: 991px) {
+    .artist-spotlight {
+        flex-direction: column;
+    }
+    .artist-spotlight.reverse {
+        flex-direction: column;
+    }
+    .artist-image {
+        max-width: 100%;
+    }
+    .rising-stars .artist-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .producer-item {
+        flex-direction: column;
+    }
+    .producer-name {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .artists-page .hero h1 {
+        font-size: 2.2rem;
+    }
+    .artists-page .about h2,
+    .rising-stars h2,
+    .producers h2 {
+        font-size: 2rem;
+    }
+    .artist-details h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .rising-stars .artist-grid {
+        grid-template-columns: 1fr;
+    }
+    .artists-page .hero h1 {
+        font-size: 1.8rem;
+    }
+    .artists-page .about p,
+    .rising-stars p,
+    .producers p {
+        font-size: 1rem;
+    }
+    .artist-details {
+        padding: 20px;
+    }
+    .artist-details h3 {
+        font-size: 1.5rem;
+    }
+    .artist-details p {
+        font-size: 1rem;
+    }
+}

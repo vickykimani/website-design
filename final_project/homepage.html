@@ -181,8 +181,39 @@
     </footer>
 
     <script>
-        document.getElementById('navToggle').addEventListener('click', function() {
-            document.getElementById('navLinks').classList.toggle('active');
+        // active nav link
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || homepage.html;
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // toggle mobile navigation
+            document.getElementById('navToggle').addEventListener('click', function() {
+                document.getElementById('navLinks').classList.toggle('active');
+            });
+
+            // handle "coming soon" pages (remove once pages are completed)
+            const unfinishedPages = ['style.html', 'impact.html', 'culture.html'];
+            // update this array to exclude completed pages
+
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (unfinishedPages.includes(linkPage)) {
+                    link.addEventListener('click', function(event) {
+                        // only redirect if we're not alr on a coming soon page
+                        if (!currentPage.includes('coming-soon')) {
+                            event.preventDefault();
+                            window.location.href = 'coming-soon.html?page=' + linkPage;
+                        }
+                    });
+                }
+            });
         });
     </script>
 

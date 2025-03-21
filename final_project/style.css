@@ -1082,3 +1082,27 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+/* listening guide page specific styles */
+
+.guide-page {
+    color: #222;
+}
+
+.guide-page .hero {
+    background: url() no-repeat center center/cover;
+    min-height: 50vh;
+    position: relative;
+}
+
+.guide-page .hero:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}

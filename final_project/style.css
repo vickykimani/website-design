@@ -1340,7 +1340,7 @@ footer {
 /* style page css starts here */
 
 .style-page .hero {
-    background: url() no-repeat center center/cover;
+    background: url(images/hero-style.jpg) no-repeat center center/cover;
     min-height: 50vh;
     position: relative;
 }

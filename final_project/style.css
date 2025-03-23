@@ -1656,3 +1656,57 @@ p.region-traits {
     margin: 0;
     text-align: left;
 }
+
+
+/* responsive adjustments for style page */
+
+@media screen and (max-width: 991px) {
+    .region-grid {
+        grid-template-columns: 1fr;
+    }
+    .style-image-right {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .style-page .hero h1 {
+        font-size: 2.2rem;
+    }
+    .style-page .about h2,
+    .style-text h2,
+    .style-text-left h2 {
+        font-size: 2rem;
+    }
+    .technique-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .technique-content p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .style-page .hero h1 {
+        font-size: 1.8rem;
+    }
+    .style-page .about p {
+        font-size: 1rem;
+    }
+    .element-item,
+    .technique-item {
+        padding: 15px;
+    }
+    .element-features {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .element-features span {
+        width: 100%;
+    }
+}

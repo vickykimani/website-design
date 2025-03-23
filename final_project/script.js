@@ -28,7 +28,7 @@
      });
 
      // handle "coming soon" pages (remove once pages are completed)
-     const unfinishedPages = ['style.html', 'impact.html', 'culture.html'];
+     const unfinishedPages = ['impact.html', 'culture.html'];
      // update this array to exclude completed pages
 
      navLinks.forEach(link => {

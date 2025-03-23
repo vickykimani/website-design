@@ -1430,3 +1430,53 @@ footer {
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+
+
+/* element list */
+
+.element-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.element-item {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.element-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.element-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.element-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.element-features span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f3f3f3;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.element-features span i {
+    color: #ff4500;
+}

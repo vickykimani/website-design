@@ -8,13 +8,18 @@ This repository contains web development files from my website design class, doc
 3. [Other Notable Files](#)
 
 ### Final Project: Afro-House Website
-This is a multi-page website exploring the history, rise, and culture of Afro-House music. This project shows my skills in responsive design, UI/UX principles, and front-end development.
+This is a multi-page, responsive website exploring the history, rise, and culture of Afro-House music. The objective of this project is to provide an engaging and transformative platform for Afro-House music enthusiasts while leveraging basic UI/UX principles.
 
-### Features:
-- Responsive design for all screen sizes
-- Engaging layout and typography
-- Clean and structured CSS
-- Interactive elements
+### Features & Functionalities:
+#### a. Responsive Design
+-> Adapts to four screen sizes: sm (576-767px), md (768-991px), lg (992-1199px), xl (1200px+).
+-> Layout adjustments are made using media queries for responsiveness.
+
+#### b. Multi-Page Navigation
+#### c. Consistent Visual Design
+#### d. Media & Content
+#### e. Accessibility & Performance
+#### f. Code Structure & Optimization
 
 🔗 **[View Final Project](https://studentweb.cdm.depaul.edu/vkimani/final_project/homepage.html)** <br>
 🔗 **[Live Demo](#)**

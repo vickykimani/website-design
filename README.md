@@ -12,7 +12,7 @@ This is a multi-page, responsive website exploring the history, rise, and cultur
 
 ### Features & Functionalities:
 #### a. Responsive Design
--> Adapts to four screen sizes: sm (576-767px), md (768-991px), lg (992-1199px), xl (1200px+).
+-> Adapts to four screen sizes: sm (576-767px), md (768-991px), lg (992-1199px), xl (1200px+). <br>
 -> Layout adjustments are made using media queries for responsiveness.
 
 #### b. Multi-Page Navigation

@@ -350,3 +350,146 @@ h6 {
     border-radius: 50px;
     background: var(--gradient-1);
 }
+
+
+/* github section */
+
+.github-section {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.github-section:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* resources section */
+
+.resources .card {
+    padding: 25px;
+}
+
+.resources .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.resources .card-title i {
+    margin-right: 10px;
+}
+
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--dark);
+    transition: var(--transition);
+}
+
+.resources ul li a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.resources ul li a i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+
+/* contact section */
+
+.contact {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+}
+
+
+/* footer */
+
+.footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 60px 0 40px;
+}
+
+.footer img {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: var(--secondary-light);
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.footer .social-links a:hover {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

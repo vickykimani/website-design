@@ -303,3 +303,50 @@ h6 {
     margin-bottom: 30px;
     font-size: 1.05rem;
 }
+
+
+/* assignments grid */
+
+.assignments-grid .card {
+    padding: 25px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+}
+
+.assignments-grid .card-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.assignments-grid .card-title i {
+    font-size: 24px;
+    margin-right: 12px;
+    color: var(--primary);
+}
+
+
+/* skills section */
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 50px;
+    background-color: var(--gray-light);
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 50px;
+    background: var(--gradient-1);
+}

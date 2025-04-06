@@ -273,3 +273,33 @@ h6 {
 
 
 /* final project section */
+
+.final_project {
+    background-color: white;
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.final_project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: var(--gradient-1);
+}
+
+.final_project h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.final_project p {
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}

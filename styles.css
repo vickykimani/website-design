@@ -493,3 +493,27 @@ h6 {
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+/* additional media queries */
+
+
+/* x-large devices (1400px and up) */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
+
+
+/* large devices (992px) */
+
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+}

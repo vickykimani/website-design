@@ -517,3 +517,18 @@ h6 {
         font-size: 3.2rem;
     }
 }
+
+
+/* medium devices */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .final_project {
+        padding: 30px;
+    }
+    .final_project h2 {
+        font-size: 1.8rem;
+    }
+}

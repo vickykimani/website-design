@@ -532,3 +532,44 @@ h6 {
         font-size: 1.8rem;
     }
 }
+
+
+/* small devices */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .final_project {
+        padding: 25px;
+    }
+    .final_project h2 {
+        font-size: 1.6rem;
+    }
+    .section {
+        padding: 50px 0;
+    }
+}
+
+
+/* x-small devices */
+
+@media (max-width: 575.98px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .final_project {
+        padding: 20px;
+    }
+    .final_project h2 {
+        font-size: 1.4rem;
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .icon-box i {
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+}

@@ -312,6 +312,7 @@ h6 {
     padding: 25px;
     border-radius: var(--border-radius-md);
     margin-bottom: 20px;
+    /* margin: 15px; */
 }
 
 .assignments-grid .card-title {

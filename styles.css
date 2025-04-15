@@ -243,7 +243,8 @@ h6 {
 .hero p {
     font-size: 1.15rem;
     max-width: 600px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    /* margin-bottom: 30px; */
     opacity: 0.8;
 }
 

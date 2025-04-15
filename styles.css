@@ -275,7 +275,7 @@ h6 {
 
 /* final project section */
 
-.final_project {
+.final-project {
     background-color: white;
     border-radius: var(--border-radius-lg);
     padding: 40px;
@@ -285,7 +285,7 @@ h6 {
     overflow: hidden;
 }
 
-.final_project::before {
+.final-project::before {
     content: '';
     position: absolute;
     top: 0;
@@ -295,12 +295,12 @@ h6 {
     background: var(--gradient-1);
 }
 
-.final_project h2 {
+.final-project h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
 }
 
-.final_project p {
+.final-project p {
     margin-bottom: 30px;
     font-size: 1.05rem;
 }
@@ -526,10 +526,10 @@ h6 {
     .hero h1 {
         font-size: 2.5rem;
     }
-    .final_project {
+    .final-project {
         padding: 30px;
     }
-    .final_project h2 {
+    .final-project h2 {
         font-size: 1.8rem;
     }
 }
@@ -541,10 +541,10 @@ h6 {
     .hero h1 {
         font-size: 2rem;
     }
-    .final_project {
+    .final-project {
         padding: 25px;
     }
-    .final_project h2 {
+    .final-project h2 {
         font-size: 1.6rem;
     }
     .section {
@@ -559,10 +559,10 @@ h6 {
     .hero h1 {
         font-size: 1.8rem;
     }
-    .final_project {
+    .final-project {
         padding: 20px;
     }
-    .final_project h2 {
+    .final-project h2 {
         font-size: 1.4rem;
     }
     .section {

@@ -433,6 +433,68 @@ h6 {
     margin-top: 70px;
 }
 
+.reflection-section {
+    margin-top: 60px;
+}
+
+.reflection-card {
+    position: relative;
+    background-color: white;
+    padding: 40px 35px 30px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+    border-left: 5px solid var(--primary);
+}
+
+.reflection-card::before {
+    content: "";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120px;
+    position: absolute;
+    opacity: 0.1;
+    top: -20px;
+    left: 10px;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--gradient-1);
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.timeline-item h5 {
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
 
 /* footer */
 

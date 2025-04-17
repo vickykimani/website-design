@@ -331,7 +331,8 @@ h6 {
 /* skills section */
 
 #skills {
-    margin-top: 70px;
+    margin-top: 5vw;
+    margin-top: clamp(40px, 5vw, 70px);
 }
 
 .skill-item {
@@ -366,7 +367,7 @@ h6 {
     padding: 30px;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    margin-top: 80px;
+    margin-top: clamp(40px, 6vw, 80px);
 }
 
 .github-section:hover {
@@ -580,6 +581,9 @@ h6 {
     .hero h1 {
         font-size: 4rem;
     }
+    .github-section {
+        margin-top: 80px;
+    }
 }
 
 
@@ -604,6 +608,9 @@ h6 {
     .final-project h2 {
         font-size: 1.8rem;
     }
+    .github-section {
+        margin-top: 60px;
+    }
 }
 
 
@@ -621,6 +628,18 @@ h6 {
     }
     .section {
         padding: 50px 0;
+    }
+    .github-section {
+        margin-top: 40px;
+    }
+    #skills {
+        margin-top: 10px;
+    }
+    #contact {
+        margin-top: 20px;
+    }
+    .reflection-section {
+        margin-top: 20px;
     }
 }
 
@@ -644,5 +663,18 @@ h6 {
         height: 40px;
         width: 40px;
         font-size: 18px;
+    }
+    .github-section {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    #skills {
+        margin-top: 10px;
+    }
+    #contact {
+        margin-top: 10px;
+    }
+    .reflection-section {
+        margin-top: 10px;
     }
 }

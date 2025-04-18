@@ -29,6 +29,16 @@ For all assignments, including responsive layout exercises and CSS styling proje
 
 ## Other Notable Files
 Most of the files in this repository are not well arranged, so I'll try my best to link them here.
+- Assignments (labelled a1 to a8): <br>
+     - [`a1.html`](./a1.html) <br>
+     - [`a2.html`](./a2.html) <br>
+     - [`a3.html`](./a3.html) <br>
+     - [`a4.html`](./a4.html) <br>
+     - [`a5.html`](./a5.html) <br>
+     - [`a6.html`](./a6.html) <br>
+     - [`a7.html`](./a7.html) <br>
+     - [`a8.html`](./a8.html) <br>
+      
 - In-class coding files:
     1. File 1 -> about so and so...
     2. File 2 -> about so and so...

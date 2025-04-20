@@ -23,7 +23,7 @@ This website was created with a strong focus on usability, accessibility, and vi
 🔗 **[Live Demo](#)**
 
 ## Assignments Index
-For all assignments, including responsive layout exercises and CSS styling projects, visit [student.web](#)
+For all assignments, including responsive layout exercises and CSS styling projects, visit [student.web](#) <br>
 Assignments linked here: <br>
      - [`a1.html`](./a1.html) <br>
      - [`a2.html`](./a2.html) <br>

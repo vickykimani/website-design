@@ -20,7 +20,6 @@ This website was created with a strong focus on usability, accessibility, and vi
 `HTML5`, `CSS`, `Bootstrap (icons only)`, `Media Queries`
 
 🔗 **[View Final Project](https://studentweb.cdm.depaul.edu/vkimani/final_project/homepage.html)** <br>
-🔗 **[Live Demo](#)**
 
 ## Assignments Index
 - For all assignments, including responsive layout exercises and CSS styling projects, visit [student.web](#) <br>
@@ -34,12 +33,14 @@ This website was created with a strong focus on usability, accessibility, and vi
   ------- [`a7.html`](./a7.html) <br>
   ------- [`a8.html`](./a8.html) <br>
 
-## Other Notable Files
-Most of the files in this repository are not well arranged, so I'll try my best to link them here.
-      
-- In-class coding files:
-    1. File 1 -> about so and so...
-    2. File 2 -> about so and so...
-    3. File 3 -> about so and so...
+## Other Files
+The rest of the files were in-class coding files.
+
+## Contact Me
+In case of any questions, email me: [victorianightingale70@gmail.com](mailto:victorianightingale70@gmail.com)
+
+<div align="center">
+  <sup>For usage rights, see <a href="https://github.com/vickykimani/website-design/blob/main/LICENSE.md">License.md</a></sup>
+</div>
   
 

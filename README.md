@@ -5,7 +5,7 @@ This repository contains web development files from my website design class, doc
 ## Table of Contents
 1. [Final Project](#final-project)
 2. [Assignments Index](#assignments-index)
-3. [Other Notable Files](#other-notable-files)
+3. [Other Files](#other-files)
 
 ### Final Project
 This website was created with a strong focus on usability, accessibility, and visual hierarchy to enhance user experience. It adapts seamlessly across multiple screen sizes (mobile, tablet, and desktop) and follows basic HCI principles to ensure intuitive navigation and readability.
